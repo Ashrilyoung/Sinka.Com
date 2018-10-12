@@ -7,8 +7,8 @@ package sinka.com;
 
 /**
  *
- * @author dwarfonfire
- * this is an attempt to make the sinka.com example from Head First Java chapter 6 page 146 onwards functional
+ * @author dwarfonfire this is an attempt to make the sinka.com example from
+ * Head First Java chapter 6 page 146 onwards functional
  */
 public class SinkaCom {
 
@@ -21,5 +21,5 @@ public class SinkaCom {
         game.setUpGame();
         game.startPlaying();
     }
-    
+
 }

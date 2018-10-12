@@ -12,36 +12,35 @@ import java.util.*;
  * @author dwarfonfire
  */
 public class DotCom {
-    
+
     private ArrayList<String> locationCells;
-    private String name;
-    
-    public void setUpLocationCells(ArrayList<String> loc){
+    String name;
+
+    public void setUpLocationCells(ArrayList<String> loc) {
         locationCells = loc;
     }
-    
-    public void setName(String n){
+
+    public void setName(String n) {
         name = n;
     }
-    
-    public String checkYourself(String userInput){
-        
-        String result= "miss";
+
+    public String checkYourself(String userInput) {
+
+        String result = "miss";
         int index = locationCells.indexOf(userInput);
-        
-        if(index >= 0){
+
+        if (index >= 0) {
             locationCells.remove(index);
-            
-            if(locationCells.isEmpty()){
+
+            if (locationCells.isEmpty()) {
                 result = "kill";
-                System.out.println("You Sunk"+name);
-            }else{
+                System.out.println("You Sunk" + name);
+            } else {
                 result = "hit";
             }
-        } 
-        
+        }
+
         return result;
-        
-        
+
     }
 }
